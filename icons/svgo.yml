@@ -1,0 +1,24 @@
+# SVGO 配置文件 (YAML 格式)
+# 优化 SVG 文件，移除无用属性、压缩文件大小
+# replace default config
+
+# multipass: true
+# full: true
+
+plugins:
+
+  # - name
+  #
+  # or:
+  # - name: false
+  # - name: true
+  #
+  # or:
+  # - name:
+  #     param1: 1
+  #     param2: 2
+
+- removeAttrs:
+    attrs:
+      - 'fill'
+      - 'fill-rule'
